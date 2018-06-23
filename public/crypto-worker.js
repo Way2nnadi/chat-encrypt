@@ -27,7 +27,7 @@ onmessage = e => {
 function generateKeypair() {
     crypt = new JSEncrypt({ default_key_size: 2056 });
     privateKey = crypt.getPrivateKey();
-
+    
     return crypt.getPublicKey();
 }
 

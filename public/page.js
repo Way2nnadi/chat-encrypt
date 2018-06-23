@@ -92,6 +92,7 @@ const vm = new Vue ({
         this.socket.emit('JOIN');
     },
     addMessage(message) {
+      console.log(this.originPublicKey);
         this.messages.push(message);
     },
     getWebWorkerResponse(messageType, messagePayload) {
